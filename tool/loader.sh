@@ -1,1 +1,1 @@
-nasm -I include/ -o loader.bin loader.S && dd if=./loader.bin  of=/home/work/my_workspace/bochs/hd60M.img bs=512 count=3 seek=2 conv=notrunc
+nasm -I /opt/bochs/MBR/include/ -o loader.bin ./MBR/loader.S && dd if=./loader.bin  of=/opt/bochs/hd60MB.img bs=512 count=3 seek=2 conv=notrunc
